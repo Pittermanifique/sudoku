@@ -197,7 +197,7 @@ def main():
                         p = creer_process(board, shared_solutions)
                         p.start()
                         processes.append(p)
-                else:
+                else: 
                     running = False
 
         if resolution_lancée and all(not p.is_alive() for p in processes):
